@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書籍一覧 - 蒼月出版</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>蒼月出版</h1>
+                <span class="logo-subtitle">Aotsuki Publishing</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="books.html" class="nav-link active">書籍</a>
+                <a href="authors.html" class="nav-link">著者</a>
+                <a href="news.html" class="nav-link">ニュース</a>
+                <a href="about.html" class="nav-link">会社概要</a>
+                <a href="contact.html" class="nav-link">お問い合わせ</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ページヘッダー -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">書籍一覧</h1>
+            <p class="page-subtitle">心に響く物語をお届けします</p>
+        </div>
+    </section>
+
+    <!-- 書籍一覧 -->
+    <section class="books-list-section">
+        <div class="container">
+            <div class="books-filters">
+                <button class="filter-btn active" data-genre="all">すべて</button>
+                <button class="filter-btn" data-genre="literature">文学</button>
+                <button class="filter-btn" data-genre="mystery">ミステリー</button>
+                <button class="filter-btn" data-genre="sf">SF・ファンタジー</button>
+                <button class="filter-btn" data-genre="essay">エッセイ</button>
+            </div>
+
+            <div class="books-grid">
+                <div class="book-card" data-genre="literature">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="book-title-overlay">月光の記憶</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">月光の記憶</h3>
+                        <p class="book-author">山田花子</p>
+                        <p class="book-genre">現代文学</p>
+                        <p class="book-price">¥1,800</p>
+                        <p class="book-description">第15回蒼月文学賞受賞作。静かな夜に浮かぶ記憶の断片を、繊細な筆致で描く感動作。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="sf">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="book-title-overlay">時の彼方へ</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">時の彼方へ</h3>
+                        <p class="book-author">佐藤太郎</p>
+                        <p class="book-genre">SF</p>
+                        <p class="book-price">¥2,200</p>
+                        <p class="book-description">時空を超える壮大な冒険。独創的な世界観と緻密な設定が織りなす傑作SF。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="mystery">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="book-title-overlay">静寂の声</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">静寂の声</h3>
+                        <p class="book-author">鈴木一郎</p>
+                        <p class="book-genre">ミステリー</p>
+                        <p class="book-price">¥1,600</p>
+                        <p class="book-description">本屋大賞ノミネート作品。緻密なトリックと人間ドラマが融合した本格ミステリー。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="literature">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span class="book-title-overlay">夢の終わり</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">夢の終わり</h3>
+                        <p class="book-author">田中美咲</p>
+                        <p class="book-genre">現代文学</p>
+                        <p class="book-price">¥1,900</p>
+                        <p class="book-description">青春の終わりと大人への階段。切なくも美しい成長物語。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="essay">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <span class="book-title-overlay">日々の断片</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">日々の断片</h3>
+                        <p class="book-author">高橋次郎</p>
+                        <p class="book-genre">エッセイ</p>
+                        <p class="book-price">¥1,500</p>
+                        <p class="book-description">日常の中に潜む小さな発見と喜び。心温まるエッセイ集。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="mystery">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span class="book-title-overlay">霧の中の真実</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">霧の中の真実</h3>
+                        <p class="book-author">伊藤花音</p>
+                        <p class="book-genre">ミステリー</p>
+                        <p class="book-price">¥1,700</p>
+                        <p class="book-description">霧に包まれた小さな町で起きる連続事件。真相は意外な場所に。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="sf">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            <span class="book-title-overlay">星降る夜に</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">星降る夜に</h3>
+                        <p class="book-author">中村光</p>
+                        <p class="book-genre">ファンタジー</p>
+                        <p class="book-price">¥2,000</p>
+                        <p class="book-description">星々が降り注ぐ夜、少女は運命の扉を開く。幻想的なファンタジー。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="literature">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <span class="book-title-overlay">風の記憶</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">風の記憶</h3>
+                        <p class="book-author">小林真理</p>
+                        <p class="book-genre">現代文学</p>
+                        <p class="book-price">¥1,650</p>
+                        <p class="book-description">風が運ぶ懐かしい記憶。失われた時を求める旅の物語。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="essay">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+                            <span class="book-title-overlay">本と珈琲</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">本と珈琲</h3>
+                        <p class="book-author">渡辺健太</p>
+                        <p class="book-genre">エッセイ</p>
+                        <p class="book-price">¥1,400</p>
+                        <p class="book-description">読書と珈琲をこよなく愛する著者が綴る、至福の時間。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="sf">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #f77062 0%, #fe5196 100%);">
+                            <span class="book-title-overlay">未来への扉</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">未来への扉</h3>
+                        <p class="book-author">佐藤太郎</p>
+                        <p class="book-genre">SF</p>
+                        <p class="book-price">¥2,100</p>
+                        <p class="book-description">「時の彼方へ」に続く待望の第2弾。さらに深まる謎と冒険。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="mystery">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);">
+                            <span class="book-title-overlay">最後の証人</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">最後の証人</h3>
+                        <p class="book-author">鈴木一郎</p>
+                        <p class="book-genre">ミステリー</p>
+                        <p class="book-price">¥1,800</p>
+                        <p class="book-description">事件の鍵を握る最後の証人。しかし彼の証言には矛盾が。</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="literature">
+                    <div class="book-cover">
+                        <div class="book-placeholder" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);">
+                            <span class="book-title-overlay">春の足音</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">春の足音</h3>
+                        <p class="book-author">山田花子</p>
+                        <p class="book-genre">現代文学</p>
+                        <p class="book-price">¥1,750</p>
+                        <p class="book-description">冬の終わりに聞こえる春の足音。新しい季節への期待と不安。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">蒼月出版</h3>
+                    <p class="footer-text">心に響く物語を世界へ届ける出版社です。文学の新しい地平を切り拓き、読者の皆様に感動をお届けします。</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">リンク</h4>
+                    <ul class="footer-links">
+                        <li><a href="books.html">書籍一覧</a></li>
+                        <li><a href="authors.html">著者紹介</a></li>
+                        <li><a href="news.html">ニュース</a></li>
+                        <li><a href="about.html">会社概要</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">お問い合わせ</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">お問い合わせフォーム</a></li>
+                        <li>Email: info@aotsuki-pub.jp</li>
+                        <li>Tel: 03-1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 蒼月出版. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="books.js"></script>
+</body>
+</html>

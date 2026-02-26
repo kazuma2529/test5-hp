@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ニュース - 蒼月出版</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>蒼月出版</h1>
+                <span class="logo-subtitle">Aotsuki Publishing</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="books.html" class="nav-link">書籍</a>
+                <a href="authors.html" class="nav-link">著者</a>
+                <a href="news.html" class="nav-link active">ニュース</a>
+                <a href="about.html" class="nav-link">会社概要</a>
+                <a href="contact.html" class="nav-link">お問い合わせ</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ページヘッダー -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">ニュース</h1>
+            <p class="page-subtitle">最新情報をお届けします</p>
+        </div>
+    </section>
+
+    <!-- ニュース一覧 -->
+    <section class="news-list-section">
+        <div class="container">
+            <div class="news-filters">
+                <button class="filter-btn active" data-category="all">すべて</button>
+                <button class="filter-btn" data-category="award">受賞</button>
+                <button class="filter-btn" data-category="release">新刊</button>
+                <button class="filter-btn" data-category="event">イベント</button>
+                <button class="filter-btn" data-category="other">その他</button>
+            </div>
+
+            <div class="news-list">
+                <article class="news-item" data-category="award">
+                    <div class="news-item-date">2026.02.20</div>
+                    <div class="news-item-content">
+                        <div class="news-item-category award">受賞</div>
+                        <h2 class="news-item-title">第15回蒼月文学賞 受賞作品決定</h2>
+                        <p class="news-item-text">
+                            今年度の蒼月文学賞は、新進気鋭の作家・山田花子氏の「月光の記憶」に決定いたしました。審査員全員一致での選出となりました。
+                            <br><br>
+                            山田氏は「この栄誉ある賞をいただき、大変光栄に思います。これからも読者の心に響く作品を書き続けていきたい」とコメントしています。
+                            <br><br>
+                            授賞式は3月15日、東京都内のホテルにて開催予定です。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="release">
+                    <div class="news-item-date">2026.02.15</div>
+                    <div class="news-item-content">
+                        <div class="news-item-category release">新刊</div>
+                        <h2 class="news-item-title">「時の彼方へ」が10万部突破</h2>
+                        <p class="news-item-text">
+                            佐藤太郎氏の最新作「時の彼方へ」が発売から3週間で10万部を突破しました。
+                            <br><br>
+                            独創的な世界観と緻密な設定が話題を呼び、SNSでも大きな反響を呼んでいます。書店からの追加注文も相次いでおり、さらなる増刷を決定いたしました。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="event">
+                    <div class="news-item-date">2026.02.10</div>
+                    <div class="news-item-content">
+                        <div class="news-item-category event">イベント</div>
+                        <h2 class="news-item-title">春の新刊フェア開催のお知らせ</h2>
+                        <p class="news-item-text">
+                            3月1日より全国の書店にて春の新刊フェアを開催いたします。
+                            <br><br>
+                            期間中は新刊書籍の特別展示や、著者サイン会なども予定しております。詳細は各書店にてご確認ください。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="event">
+                    <div class="news-item-date">2026.02.05</div>
+                    <div class="news-item-content">
+                        <div class="news-item-category event">イベント</div>
+                        <h2 class="news-item-title">鈴木一郎氏 サイン会開催決定</h2>
+                        <p class="news-item-text">
+                            人気ミステリー作家・鈴木一郎氏のサイン会を2月28日に開催いたします。
+                            <br><br>
+                            会場：紀伊國屋書店新宿本店<br>
+                            時間：14:00〜16:00<br>
+                            参加方法：当日、対象書籍をご購入いただいた方に整理券を配布いたします。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="release">
+                    <div class="news-item-date">2026.01.28</div>
+                    <div class="news-item-content">
+                        <div class="news-item-category release">新刊</div>
+                        <h2 class="news-item-title">3月の新刊情報を公開しました</h2>
+                        <p class="news-item-text">
+                            3月に発売予定の新刊5作品の情報を公開いたしました。
+                            <br><br>
+                            注目の新人作家によるデビュー作や、人気シリーズの最新作など、バラエティ豊かなラインナップとなっております。詳細は書籍ページをご覧ください。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="other">
+                    <div class="news-item-date">2026.01.20</div>
+                    <div class="news-item-content">
+                        <div class="news-item-category other">その他</div>
+                        <h2 class="news-item-title">公式SNSアカウント開設のお知らせ</h2>
+                        <p class="news-item-text">
+                            蒼月出版の公式SNSアカウントを開設いたしました。
+                            <br><br>
+                            新刊情報やイベント情報、著者インタビューなど、様々な情報を発信してまいります。ぜひフォローをお願いいたします。
+                            <br><br>
+                            Twitter: @aotsuki_pub<br>
+                            Instagram: @aotsuki_publishing
+                        </p>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="award">
+                    <div class="news-item-date">2026.01.15</div>
+                    <div class="news-item-content">
+                        <div class="news-item-category award">受賞</div>
+                        <h2 class="news-item-title">「静寂の声」が本屋大賞ノミネート</h2>
+                        <p class="news-item-text">
+                            鈴木一郎氏の「静寂の声」が、2026年本屋大賞にノミネートされました。
+                            <br><br>
+                            全国の書店員が選ぶこの賞にノミネートされたことは、大変名誉なことです。結果発表は4月を予定しております。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="other">
+                    <div class="news-item-date">2026.01.10</div>
+                    <div class="news-item-content">
+                        <div class="news-item-category other">その他</div>
+                        <h2 class="news-item-title">年末年始休業のお知らせ</h2>
+                        <p class="news-item-text">
+                            誠に勝手ながら、弊社は12月29日から1月5日まで年末年始休業とさせていただきます。
+                            <br><br>
+                            休業期間中のお問い合わせにつきましては、1月6日以降、順次対応させていただきます。ご不便をおかけいたしますが、何卒ご理解のほどよろしくお願い申し上げます。
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">蒼月出版</h3>
+                    <p class="footer-text">心に響く物語を世界へ届ける出版社です。文学の新しい地平を切り拓き、読者の皆様に感動をお届けします。</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">リンク</h4>
+                    <ul class="footer-links">
+                        <li><a href="books.html">書籍一覧</a></li>
+                        <li><a href="authors.html">著者紹介</a></li>
+                        <li><a href="news.html">ニュース</a></li>
+                        <li><a href="about.html">会社概要</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">お問い合わせ</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">お問い合わせフォーム</a></li>
+                        <li>Email: info@aotsuki-pub.jp</li>
+                        <li>Tel: 03-1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 蒼月出版. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="news.js"></script>
+</body>
+</html>
